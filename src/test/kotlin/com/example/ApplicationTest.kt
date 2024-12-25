@@ -26,7 +26,7 @@ class ApplicationTest {
     }
 
     @Test
-    fun testSingleQuery() = testApp {
+    fun testSingleRequest() = testApp {
         client.get("?name=qwerty").apply {
             assertEquals(HttpStatusCode.OK, status)
             assertEquals("Hello, qwerty!", body())
@@ -34,7 +34,7 @@ class ApplicationTest {
     }
 
     @Test
-    fun testMultipleQuery() = testApp {
+    fun testMultipleRequests() = testApp {
         coroutineScope {
             repeat(1000) {
                 launch {
