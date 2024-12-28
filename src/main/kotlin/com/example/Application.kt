@@ -11,7 +11,6 @@ private val socketServer = NioSocketServer(12345)
 fun main(args: Array<String>) {
     socketServer.start()
     Runtime.getRuntime().addShutdownHook(Thread { socketServer.stop() })
-    Thread.sleep(1000)
     io.ktor.server.cio.EngineMain.main(args)
 }
 
