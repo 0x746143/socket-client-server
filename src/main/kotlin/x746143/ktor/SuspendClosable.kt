@@ -1,4 +1,4 @@
-package com.example
+package x746143.ktor
 
 interface SuspendCloseable {
     suspend fun close()

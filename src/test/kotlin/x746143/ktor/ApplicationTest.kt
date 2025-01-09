@@ -1,4 +1,4 @@
-package com.example
+package x746143.ktor
 
 import io.ktor.client.call.*
 import io.ktor.client.request.*
@@ -6,6 +6,7 @@ import io.ktor.http.*
 import io.ktor.server.testing.*
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch
+import x746143.nio.NioSocketServer
 import kotlin.test.AfterTest
 import kotlin.test.BeforeTest
 import kotlin.test.Test
