@@ -22,6 +22,7 @@ dependencies {
     implementation(libs.ktor.server.cio)
     implementation(libs.logback.classic)
     implementation(libs.ktor.server.config.yaml)
+    implementation(libs.netty.all)
     testImplementation(libs.ktor.server.test.host)
     testImplementation(libs.kotlin.test.junit)
 }
